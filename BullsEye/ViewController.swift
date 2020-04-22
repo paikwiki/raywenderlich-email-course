@@ -12,8 +12,13 @@ class ViewController: UIViewController {
 
     var currentValue: Int = 0
     var targetValue = 0
+    var score = 0
+    var round = 0
+    
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var roundLabel: UILabel!
     
     func startNewRound() {
         targetValue = Int.random(in: 1...100)
@@ -24,6 +29,8 @@ class ViewController: UIViewController {
     
     func updateLabels() {
         targetLabel.text = String(targetValue)
+        scoreLabel.text = String(score)
+        roundLabel.text = String(round)
     }
     
     override func viewDidLoad() {
@@ -32,18 +39,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert() {
-        var difference: Int
-        if currentValue > targetValue {
-            difference = currentValue - targetValue
-        } else if targetValue > currentValue {
-            difference = targetValue - currentValue
-        } else {
-            difference = 0
-        }
+        let difference = abs(currentValue - targetValue)
+        let points = 100 - difference
         
-        let message = "The value of the slider is: \(currentValue)" +
-                        "\nThe target value is: \(targetValue)" +
-                        "\nThe difference is : \(difference)"
+        score += points
+        round += 1
+        
+        let message = "You scored \(points) points."
         
         let alert = UIAlertController(title: "Hello, World",
                                       message: message,
