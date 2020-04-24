@@ -72,7 +72,10 @@ class ViewController: UIViewController {
         }
         
         if round == 5 {
-            message = "Your score: \(score) points."
+            message = """
+                You scored \(points) points.
+                Total score: \(score) points.
+                """
         } else {
             message = "You scored \(points) points."
         }
