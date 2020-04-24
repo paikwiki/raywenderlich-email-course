@@ -20,7 +20,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var roundLabel: UILabel!
     
+    // TODO: Make "Start Over" button works
+    
     func startNewRound() {
+        if round < 5 {
+            round += 1
+        } else {
+            round = 0
+            score = 0
+        }
+        
         targetValue = Int.random(in: 1...100)
         currentValue = 50
         slider.value = Float(currentValue)
@@ -47,10 +56,12 @@ class ViewController: UIViewController {
             points += 50
         }
         score += points
-        round += 1
         
         let title: String
-        if difference == 0 {
+        let message: String
+        if round == 5 {
+            title = "Game over"
+        } else if difference == 0 {
             title = "Perfect!"
         } else if difference < 5 {
             title = "You almost had it!"
@@ -60,7 +71,12 @@ class ViewController: UIViewController {
             title = "Not even close..."
         }
         
-        let message = "You scored \(points) points."
+        if round == 5 {
+            message = "Your score: \(score) points."
+        } else {
+            message = "You scored \(points) points."
+        }
+        
         
         let alert = UIAlertController(title: title,
                                       message: message,
@@ -68,13 +84,13 @@ class ViewController: UIViewController {
                                     
         let action = UIAlertAction(title: "OK",
                                    style: .default,
-                                   handler: nil)
+                                   handler: { _ in
+                                                self.startNewRound()
+                                            })
         
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
-        
-        startNewRound()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
