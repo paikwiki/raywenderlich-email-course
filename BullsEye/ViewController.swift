@@ -86,10 +86,9 @@ class ViewController: UIViewController {
                                       preferredStyle: .alert)
                                     
         let action = UIAlertAction(title: "OK",
-                                   style: .default,
-                                   handler: { _ in
-                                                self.startNewRound()
-                                            })
+                                   style: .default) { [weak self] _ in
+                                                self?.startNewRound()
+                                            }
         
         alert.addAction(action)
         
