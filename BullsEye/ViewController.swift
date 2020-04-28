@@ -42,6 +42,16 @@ class ViewController: UIViewController {
         roundLabel.text = String(round)
     }
     
+    func restartNewRound() {
+        round = 0
+        score = 0
+        
+        targetValue = Int.random(in: 1...100)
+        currentValue = 50
+        slider.value = Float(currentValue)
+        updateLabels()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startNewRound()
@@ -95,6 +105,10 @@ class ViewController: UIViewController {
     
     @IBAction func sliderMoved(_ slider: UISlider) {
         currentValue = lroundf(slider.value)
+    }
+    
+    @IBAction func touchStartOver() {
+        restartNewRound()
     }
 
 }
