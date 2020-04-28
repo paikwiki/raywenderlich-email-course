@@ -82,7 +82,10 @@ class ViewController: UIViewController {
         }
         
         if round == 5 {
-            message = "Your score: \(score) points."
+            message = """
+                You scored \(points) points.
+                Total score: \(score) points.
+                """
         } else {
             message = "You scored \(points) points."
         }
@@ -93,10 +96,9 @@ class ViewController: UIViewController {
                                       preferredStyle: .alert)
                                     
         let action = UIAlertAction(title: "OK",
-                                   style: .default,
-                                   handler: { _ in
-                                                self.startNewRound()
-                                            })
+                                   style: .default) { [weak self] _ in
+                                                self?.startNewRound()
+                                            }
         
         alert.addAction(action)
         
