@@ -13,6 +13,7 @@
 		4A72E5F42443533A00EE4B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E5F22443533A00EE4B19 /* Main.storyboard */; };
 		4A72E5F62443534000EE4B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E5F52443534000EE4B19 /* Assets.xcassets */; };
 		4A72E5F92443534000EE4B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E5F72443534000EE4B19 /* LaunchScreen.storyboard */; };
+		992E4D32245AC943005777E4 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 992E4D31245AC943005777E4 /* BullsEye.html */; };
 		99779E112459164D002B4441 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99779E102459164D002B4441 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		4A72E5F52443534000EE4B19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A72E5F82443534000EE4B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A72E5FA2443534000EE4B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992E4D31245AC943005777E4 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BullsEye.html; path = ../../../../Downloads/BullsEye.html; sourceTree = "<group>"; };
 		99779E102459164D002B4441 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				4A72E5EE2443533A00EE4B19 /* SceneDelegate.swift */,
 				4A72E5F02443533A00EE4B19 /* ViewController.swift */,
 				99779E102459164D002B4441 /* AboutViewController.swift */,
+				992E4D31245AC943005777E4 /* BullsEye.html */,
 				4A72E5F22443533A00EE4B19 /* Main.storyboard */,
 				4A72E5F52443534000EE4B19 /* Assets.xcassets */,
 				4A72E5F72443534000EE4B19 /* LaunchScreen.storyboard */,
@@ -131,6 +134,7 @@
 				4A72E5F92443534000EE4B19 /* LaunchScreen.storyboard in Resources */,
 				4A72E5F62443534000EE4B19 /* Assets.xcassets in Resources */,
 				4A72E5F42443533A00EE4B19 /* Main.storyboard in Resources */,
+				992E4D32245AC943005777E4 /* BullsEye.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
