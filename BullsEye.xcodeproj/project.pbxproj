@@ -15,6 +15,7 @@
 		4A72E5F92443534000EE4B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A72E5F72443534000EE4B19 /* LaunchScreen.storyboard */; };
 		992E4D32245AC943005777E4 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 992E4D31245AC943005777E4 /* BullsEye.html */; };
 		99779E112459164D002B4441 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99779E102459164D002B4441 /* AboutViewController.swift */; };
+		99CE9C0B245ACB900004D6E7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CE9C0A245ACB900004D6E7 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4A72E5FA2443534000EE4B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		992E4D31245AC943005777E4 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = BullsEye.html; path = ../../../../Downloads/BullsEye.html; sourceTree = "<group>"; };
 		99779E102459164D002B4441 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		99CE9C0A245ACB900004D6E7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99CE9C0B245ACB900004D6E7 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				4A72E5EB2443533A00EE4B19 /* BullsEye */,
 				4A72E5EA2443533A00EE4B19 /* Products */,
+				99CE9C09245ACB900004D6E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,14 @@
 				4A72E5FA2443534000EE4B19 /* Info.plist */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		99CE9C09245ACB900004D6E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99CE9C0A245ACB900004D6E7 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
