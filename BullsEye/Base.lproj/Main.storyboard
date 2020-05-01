@@ -15,8 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="uZY-pa-ibX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="uZY-pa-ibX">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uZY-pa-ibX" secondAttribute="height" multiplier="448:207" id="0Um-Ik-3Dl"/>
+                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdD-fD-D15">
                                 <rect key="frame" x="179.5" y="52" width="537" height="310"/>
@@ -132,7 +135,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uZY-pa-ibX" secondAttribute="trailing" id="0Sa-4r-NAq"/>
                             <constraint firstItem="zdD-fD-D15" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5FT-h9-xZd"/>
+                            <constraint firstItem="uZY-pa-ibX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dfh-ej-w3G"/>
                             <constraint firstAttribute="bottom" secondItem="uZY-pa-ibX" secondAttribute="bottom" id="ex1-hb-ii9"/>
                             <constraint firstItem="zdD-fD-D15" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kVC-9M-all"/>
                             <constraint firstAttribute="trailing" secondItem="uZY-pa-ibX" secondAttribute="trailing" id="oPz-eN-zqr"/>
@@ -160,7 +165,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="aT0-Nt-Zvn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="aT0-Nt-Zvn">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsW-uv-jcZ">
