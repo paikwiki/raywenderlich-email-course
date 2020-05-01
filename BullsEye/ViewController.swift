@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         if round < 5 {
             round += 1
         } else {
-            round = 0
+            round = 1
             score = 0
         }
         
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     func restartNewRound() {
-        round = 0
+        round = 1
         score = 0
         
         targetValue = Int.random(in: 1...100)
